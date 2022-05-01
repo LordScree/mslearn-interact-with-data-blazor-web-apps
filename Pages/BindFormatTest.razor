@@ -1,0 +1,14 @@
+@page "/bind-format-test"
+
+<h1>Order a pizza for your birthday!</h1>
+
+<h2>Your birthday is on @birthdate</h2>
+
+<p>
+    Enter your birth date:
+    <input @bind="birthdate" @bind:format="dd/MM/yyyy" />
+</p>
+
+@code {
+    private DateTime birthdate { get; set; } = new(1982, 11, 24);
+}

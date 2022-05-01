@@ -1,0 +1,13 @@
+@page "/favourite-pizza"
+
+<h1>My favourite pizza is: @favPizza</h1>
+
+<p>
+    Enter your favourite pizza:
+    <!-- Observation: This was incorrect in the tutorial - bind-value should be bind. -->
+    <input @bind="favPizza" @bind:event="oninput" />
+</p>
+
+@code {
+    private string favPizza { get; set; } = "Margherita";
+}

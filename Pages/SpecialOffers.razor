@@ -1,0 +1,13 @@
+@page "/specialoffers"
+
+<h1>Special Offers</h1>
+
+<!-- Observation: Value must be obtained from code and cannot simply be a string. -->
+<CascadingValue Name="DealName" Value="@Deal">
+    <!-- Observation: Need to provide the namespace here, or in a using statement. -->
+    <BlazingPizza.Pages.Components.PizDeal />
+</CascadingValue>
+
+@code {
+    string Deal = "Throwback Thursday";
+}

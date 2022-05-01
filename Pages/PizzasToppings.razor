@@ -1,0 +1,8 @@
+@page "/pizzas-toppings"
+@using BlazingPizza.Pages.Components
+
+<h1>Our Latest Pizzas and Topping</h1>
+
+<Piz PizzaName="Hawaiian" PizzaDescription="The one with pineapple" />
+
+<PizTop Topping="@(new PizzaTopping() { Name = "Chilli Sauce", Ingredients = "Three kinds of chilli." })" />
